@@ -1,0 +1,29 @@
+import java.lang.String;
+import java.util.Scanner;
+public class  Substring 
+{
+	public static void main(String[] args) 
+	{
+		do{
+			Scanner scanner = new Scanner(System.in);
+			String Subs = scanner.next( );
+			int Index = scanner.nextInt( );
+			int Len = scanner.nextInt( );
+			int fact_len = Subs.length( );
+			String message ;
+			if( Len>= fact_len )
+					 message = Subs.substring(Index);
+			else
+					 message = Subs.substring(Index, Index+Len);
+			// left ws not be included
+
+			System.out.println( message );
+		}while (1+1==2 ); 
+
+		/*Char [ ] chars = Subs.toCharArray( );
+		int i, j;
+		for( i =Index , j = 0; j < Len ;  i++, j++ )
+			 System.out.print(chars [ i ] );
+			 */
+	}
+}
