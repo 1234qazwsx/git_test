@@ -1,0 +1,49 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.beans.*;
+import java.lang.reflect.*;
+
+
+public class  Calculator 
+{
+	public static void main(String[] args) 
+	{
+		JPanel panel = new JPanel();
+
+		JFrame f= new JFrame("Calculater061");
+
+		Container c = f.getContentPane();
+		FlowLayout flo = new FlowLayout();
+				
+
+		c.setLayout(flo);
+
+		f.setSize (300, 200);
+		f.setVisible(true);
+
+		JButton button7 = new JButton(" 7 ");
+		JButton button8 = new JButton(" 8 ");
+		JButton button9 = new JButton(" 9 ");
+		JButton button_add = new JButton(" + ");
+		button_add.addActionLisner(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+		  }
+		});
+
+		JButton button4 = new JButton(" 4 ");
+		JButton button5 = new JButton(" 5 ");
+		JButton button6 = new JButton(" 6 ");
+		JButton button_sy = new JButton(" - ");
+
+		JButton button1 = new JButton(" 1 ");
+		JButton button2 = new JButton(" 2 ");
+		JButton button3 = new JButton(" 3 ");
+		JButton button_mi = new JButton(" * ");
+
+		JButton button0 = new JButton(" 0 ");
+		JButton button_clr = new JButton("CLR");
+		JButton button9_res = new JButton(" = ");
+		JButton button9_ch = new JButton(" / ");
+	}
+}
